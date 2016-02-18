@@ -1,31 +1,268 @@
+/*
+Web Design: Tarah Kennedy
+Web Development: Tarah Kennedy
+Website: tarahkennedy.com
+Contact: contact@tarahkennedy.com
+Copyright 2016 */
 
-//font-family: 'EB Garamond', serif;
-
+html {
+	background: #181D18
+}
 
 body {
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%),
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 100%),
  	url("../images/background.jpg") no-repeat fixed;
  	background-size: cover;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
+
 
 h1 {
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
-	font-size: 180px;
-	color: white;
-	position: fixed;
-    top: 35%;
+    top: 220px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 20px;
+    width: auto; 
+    height: 250px;  
 }
 
-hr.main-line {
-	width: 200px;
-	color: white;
+h1 img {
+	height: 300px;
+	width: auto;
+}
+
+
+
+p.sub-title {
+    top: 435px;
+    left: 49.4%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1, hr.main-line, p.sub-title, .fox svg{
 	position: fixed;
-    top: 54%;
-    left: 52%;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: 'Lato', sans-serif;
 }
 
+.nav {
+	position: fixed;
+    top: 470px;
+    left: 40%;
+}
+
+ul.nav {
+    list-style-type: none;
+    line-height: 18px;
+}
+
+.nav li a, .nav-secondary li a  {
+	color: white;
+	font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+h2 {
+    font-family: 'EB Garamond', serif;
+    color: white;
+    font-size: 35px;
+    line-height: 38px;
+}
+
+//secondary page logo
+
+.secondary-menu-logo img {
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+p.secondary-sub-title {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    left: 12px;
+    top: 210px;
+    font-weight: 400;
+}
+
+// secondary page nav
+
+.nav-secondary {
+    position: absolute;
+    top: 280px;
+    left: 12px;
+}
+
+ul.nav-secondary {
+    list-style-type: none;
+    line-height: 18px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.social-media ul {
+    position: absolute;
+    top: 380px;
+    left: 12px;
+}
+
+
+
+
+// about page
+
+body.services, body.contact, body.work {
+    background: #181D18;
+}
+
+body.about {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 100%),
+    url("../images/background.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+p.about-tarah {
+    font-family: 'EB Garamond', serif;
+    color: white;
+    font-size: 35px;
+    line-height: 38px;
+    width: 60%;
+    margin: 0 320px;
+    padding-top: 200px;
+}
+
+// services page
+
+.services-page {
+    width: 60%;
+    margin: 200px 320px ;
+}
+
+.services-intro p{
+    font-family: 'EB Garamond', serif;
+    color: white;
+   color: white;
+    font-size: 25px;
+    line-height: 29px;
+    width: 100%;
+}
+
+.web-dev h3, .branding h3, .photography h3{
+    font-family: 'EB Garamond', serif;
+    color: white;
+    font-size: 35px;
+}
+
+.web-dev p, .branding p, .photography p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.web-dev, .branding, .photography {
+    border: white 1px solid;
+    box-shadow: 2px 3px white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+
+
+//contact page
+
+.contact-page p{
+   font-family: 'EB Garamond', serif;
+    color: white;
+   font-size: 35px;
+    line-height: 38px;
+    width: 60%;
+    margin-top: 200px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+
+form {
+    width: 50%;
+    margin: 50px 320px;
+}
+
+input#name, input#email, textarea#message, input#send-button {
+    border: solid 1px white;
+    background:none;
+    color: white;
+}
+
+input#send-button {
+    width: 100px;
+    // text-align: left;
+    padding: 5px;
+}
+
+input#send-button:hover {
+   border: solid 1px white;
+   background: white;
+   color: #181D18;
+}
+
+
+//work page
+
+.work-page {
+    width: 50%;
+    margin: 200px 320px ;
+}
+
+.work-page a {
+    font-family: 'EB Garamond', serif;
+    color: white;
+    font-size: 35px;
+}
+
+
+.project-image-one {
+    background-image: url("../images/gidg.jpg") no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.project-image-two {
+    background-image: url("../images/gidg.jpg") no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.project-image-three {
+    background-image: url("../images/gidg.jpg") no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.project-image-four {
+    background-image: url("../images/gidg.jpg") no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.project p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom: 1px solid white;
+    border-bottom-width: .5px;
+    padding-bottom: 15px;
+}
 
